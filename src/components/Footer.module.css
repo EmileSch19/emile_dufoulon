@@ -1,0 +1,39 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  margin-top: 40px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.copy {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.links a:hover { color: var(--green); }

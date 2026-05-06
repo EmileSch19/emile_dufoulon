@@ -1,0 +1,151 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Stage */
+.stageCard {
+  position: relative;
+  padding-left: 28px;
+  overflow: hidden;
+}
+
+.greenBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--green);
+  border-radius: 8px 0 0 8px;
+}
+
+.stageContent { display: flex; flex-direction: column; gap: 16px; }
+
+.stageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stageTitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.stageCompany {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
+
+.stagePeriod {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.bulletDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+/* Formations */
+.formationsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formationCard {
+  position: relative;
+  padding-left: 20px;
+  overflow: hidden;
+}
+
+.formationGreenBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--green);
+  border-radius: 8px 0 0 8px;
+}
+
+.formationInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.formationTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.formationSchool {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.formationPeriod {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--green);
+  white-space: nowrap;
+}
+
+/* Info */
+.infoCard {}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoItem {
+  font-size: 14px;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}

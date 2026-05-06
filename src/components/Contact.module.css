@@ -1,0 +1,106 @@
+.subtitle {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: lowercase;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  padding: 10px 14px;
+  transition: border-color 0.2s;
+  resize: none;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.1);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.submit { align-self: flex-end; }
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkCard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linkLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.linkValue {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.linkCard:hover .linkValue { color: var(--green); }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .row  { grid-template-columns: 1fr; }
+  .submit { align-self: stretch; text-align: center; justify-content: center; }
+}

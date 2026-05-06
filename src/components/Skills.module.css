@@ -1,0 +1,88 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.catCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.catCard:hover { transform: translateY(-4px); }
+
+.catHeader {
+  padding: 10px 20px;
+  border-radius: 7px 7px 0 0;
+}
+
+.catLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.7);
+  letter-spacing: 0.1em;
+}
+
+.skillList {
+  list-style: none;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skillItem {
+  font-size: 14px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.skillItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Soft */
+.softSection { margin-top: 16px; }
+.softLabel { margin-bottom: 12px; }
+
+.softList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.softTag {
+  font-size: 12px;
+  padding: 6px 14px;
+  color: var(--text);
+  border-color: var(--border);
+  border-radius: 20px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.softTag:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
