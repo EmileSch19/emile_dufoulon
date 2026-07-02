@@ -2,6 +2,16 @@ import type { Project } from '../types'
 
 export const projects: Project[] = [
   {
+    name: 'Movizz',
+    description:
+      "Application web de découverte de films, avec recherche en temps réel via l'API OMDB, pages de détail dynamiques et gestion des favoris.",
+    tags: ['Next.js', 'TypeScipt', 'CSS', 'Netlify'],
+    repo: 'https://github.com/EmileSch19/Movizz.git',
+    live: 'https://2movizz.netlify.app/',
+    featured: true,
+  },
+  
+  {
     name: 'Mercurial Shop',
     description:
       "Site e-commerce avec navigation dynamique via React Router, architecture de composants réutilisables et attention particulière portée à l'UX et au design.",
@@ -24,7 +34,7 @@ export const projects: Project[] = [
       'Application de suivi financier personnel — visualisation de dépenses et gestion de budget.',
     tags: ['React', 'JavaScript'],
     repo: 'https://github.com/EmileSch19/FinTracker.git',
-    live: 'https://fin-tracker-sable.vercel.app/',
+    live: 'https://fin-tracker-ten-umber.vercel.app/login',
   },
   {
     name: 'Bedrine Game',
