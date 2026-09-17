@@ -9,8 +9,8 @@ const bullets = [
 
 const formations = [
   {
-    title: 'Master 1 Développement Web & Mobile',
-    school: 'ESTIAM — Lyon, France',
+    title: 'Bachelor Chef de Projets Digitaux option Développement Web',
+    school: 'Eemi — Lyon, France',
     period: 'En cours',
   },
   {
