@@ -5,7 +5,6 @@ const contactLinks = [
   { label: 'Email',    value: 'emile.dufoulon@outlook.com', href: 'mailto:emile.dufoulon@outlook.com' },
   { label: 'LinkedIn', value: 'emile-essomba-dufoulon',     href: 'https://linkedin.com/in/emile-essomba-dufoulon/' },
   { label: 'GitHub',   value: 'github.com/EmileSch19',       href: 'https://github.com/EmileSch19' },
-  { label: 'Portfolio live', value: 'portfolioemile.vercel.app', href: 'https://portfolio-emile-nine.vercel.app/' },
 ]
 
 export default function Contact() {
@@ -28,7 +27,7 @@ export default function Contact() {
         <h2 className="section-title">Travaillons ensemble</h2>
         <p className={styles.subtitle}>
           Disponible immédiatement pour une alternance ou un stage.<br />
-          Rythme 4j/1j — mobilité nationale. Réponse sous 24h.
+          Rythme 3s/1s — mobilité nationale. Réponse sous 24h.
         </p>
 
         <div className={styles.grid}>
