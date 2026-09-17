@@ -7,8 +7,8 @@ const terminalLines = [
   { text: '',                                  color: 'none' },
   { text: '$ cat profile.json',               color: 'green' },
   { text: '{',                                 color: 'text' },
-  { text: '  "role": "React Dev & Fullstack",', color: 'text' },
-  { text: '  "formation": "Master 1 ESTIAM",', color: 'text' },
+  { text: '  "role": "Dev Web Fullstack",', color: 'text' },
+  { text: '  "formation": "Bachelor Chef de Projets Digitaux option Développement Web",', color: 'text' },
   { text: '  "stack": ["React","Next.js","Node.js"],', color: 'text' },
   { text: '  "lighthouse": "> 90",',           color: 'text' },
   { text: '  "openToWork": true',              color: 'green' },
@@ -30,7 +30,7 @@ export default function Hero() {
         {/* Left */}
         <div className={styles.left}>
           <p className={`section-label fade-in ${styles.available}`}>
-            // REACT DEV — DISPONIBLE IMMÉDIATEMENT
+            // DEV WEB FULL STACK — DISPONIBLE IMMÉDIATEMENT
           </p>
 
           <h1 className={`${styles.name} fade-in fade-in-delay-1`}>
@@ -38,12 +38,12 @@ export default function Hero() {
           </h1>
 
           <p className={`${styles.desc} fade-in fade-in-delay-2`}>
-            Développeur React & Fullstack en Master 1 à l'ESTIAM Lyon.
+            Bachelor Chef de Projets Digitaux option Développement Web à l'Eemi Lyon.
             Je crée des interfaces rapides, accessibles et bien architecturées.
           </p>
 
           <div className={`${styles.pills} fade-in fade-in-delay-3`}>
-            {['Rythme 4j/1j', 'Mobilité nationale', 'Stage/Alternance'].map((p) => (
+            {['Rythme 3s/1s', 'Mobilité nationale', 'Stage/Alternance'].map((p) => (
               <span key={p} className={styles.pill}>{p}</span>
             ))}
           </div>
