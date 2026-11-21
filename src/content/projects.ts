@@ -125,15 +125,16 @@ export const projects: Project[] = [
   },
   {
     slug: 'mercurial-shop',
-    title: 'Mercurial Shop',
+    title: 'Vélox — boutique de crampons',
     year: '2026',
     kind: 'Front-end — e-commerce',
-    summary: 'Vitrine e-commerce en React avec navigation multi-pages et composants réutilisables.',
+    summary: 'Mini-boutique e-commerce en React pour une marque fictive : catalogue, fiche produit, panier et mode clair/sombre.',
     highlights: [
-      'Navigation multi-pages avec React Router (accueil, à propos, contact)',
-      'Architecture de composants réutilisables (produits, témoignages, newsletter, équipe)',
+      'Catalogue filtrable et triable, filtres conservés dans l’URL',
+      'Panier persistant (useReducer + localStorage) avec quantités et total',
+      'Fiche produit avec choix de pointure, mode clair/sombre sans flash, responsive et accessible au clavier',
     ],
-    stack: ['React', 'Vite', 'React Router', 'CSS', 'Font Awesome', 'Vercel'],
+    stack: ['React', 'Vite', 'React Router', 'CSS', 'Vercel'],
     image: '/projects/mercurial.webp',
     links: {
       live: 'https://mercurial-v2.vercel.app/',
