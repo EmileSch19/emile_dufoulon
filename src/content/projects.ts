@@ -60,7 +60,9 @@ export const projects: Project[] = [
       'API REST Express en TypeScript : auth, catégories, transactions (CRUD), synthèse',
       'Authentification JWT, mots de passe hachés (bcrypt) et middleware de protection',
       'Modélisation Prisma sur PostgreSQL (utilisateurs, catégories, transactions)',
-      'Front React + Tailwind : dashboard, liste des transactions, export PDF',
+      'Validation des données avec Zod et limitation des tentatives de connexion',
+      'Front React + Tailwind : tableau de bord mensuel (solde, dépenses par catégorie, 3 derniers mois), transactions, export PDF, mode clair/sombre',
+      'Démo sans inscription : bouton « Essayer la démo » sur un compte réinitialisé à chaque connexion',
       'Application mobile React Native / Expo connectée à la même API',
     ],
     architecture: [
@@ -74,6 +76,7 @@ export const projects: Project[] = [
       live: 'https://fin-tracker-ten-umber.vercel.app/login',
       repo: 'https://github.com/EmileSch19/FinTracker',
     },
+    image: '/projects/fintracker.webp',
     bento: 'large',
   },
   {
@@ -88,15 +91,17 @@ export const projects: Project[] = [
     role: 'Conception et développement',
     highlights: [
       'Next.js (App Router) avec route dynamique de détail /films/[id]',
-      "Intégration de l'API OMDB (recherche et détail)",
-      'Favoris persistés en LocalStorage',
-      'Composants typés en TypeScript, interface en Tailwind CSS',
+      "Intégration de l'API OMDB côté serveur : clé non exposée, réponses mises en cache",
+      'Accueil par collections (science-fiction, action, animation…) et recherche paginée',
+      'Favoris persistés en LocalStorage, cœur sur chaque affiche et compteur',
+      'Squelettes de chargement, pages 404 et erreur ; TypeScript et Tailwind CSS',
     ],
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'API OMDB', 'Netlify'],
     links: {
       live: 'https://2movizz.netlify.app/',
       repo: 'https://github.com/EmileSch19/Movizz',
     },
+    image: '/projects/movizz.webp',
     bento: 'wide',
   },
   {
