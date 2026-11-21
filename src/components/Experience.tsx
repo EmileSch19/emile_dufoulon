@@ -10,7 +10,7 @@ const bullets = [
 const formations = [
   {
     title: 'Bachelor Chef de Projets Digitaux option Développement Web',
-    school: 'Eemi — Lyon, France',
+    school: 'EEMI — Lyon, France',
     period: 'En cours',
   },
   {
@@ -35,7 +35,7 @@ export default function Experience() {
               <div className={styles.stageHeader}>
                 <div>
                   <h3 className={styles.stageTitle}>Développeur Front-End</h3>
-                  <p className={styles.stageCompany}>Unidrine · Stage · Lyon</p>
+                  <p className={styles.stageCompany}>UniDrine (ex-Bedrine) · Stage · Lyon</p>
                 </div>
                 <span className={styles.stagePeriod}>Juin – Août 2023</span>
               </div>
@@ -71,8 +71,9 @@ export default function Experience() {
               <p className="section-label" style={{ marginBottom: '16px' }}>// INFOS COMPLÉMENTAIRES</p>
               <div className={styles.infoList}>
                 <span className={styles.infoItem}>⚽ Ailier d'une équipe de football</span>
-                <span className={styles.infoItem}>🎵 Rap, Rock, Métal, Indée</span>
-                <span className={styles.infoItem}>🌍 Anglais A2</span>
+                <span className={styles.infoItem}>🎵 Rap, Rock, Métal, Indé</span>
+                <span className={styles.infoItem}>🌍 Anglais A2 · Espagnol A2</span>
+                <span className={styles.infoItem}>🤝 Bénévole chez Cop1 Lyon — lutte contre la précarité étudiante (2023–2024)</span>
               </div>
             </div>
           </div>

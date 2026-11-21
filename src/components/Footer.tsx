@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <span className={styles.logo}>emile.dev</span>
         <span className={styles.copy}>
-          Développeur React & Fullstack · Fait avec React + Vite · Déployé sur Vercel
+          Développeur React & Fullstack · Fait avec React + Vite · Déployé sur Netlify
         </span>
         <div className={styles.links}>
           <a href="https://github.com/EmileSch19" target="_blank" rel="noopener noreferrer">

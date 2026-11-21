@@ -40,7 +40,11 @@
   gap: 16px;
 }
 
-.featured { width: 100%; }
+.featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
 
 .rest {
   display: grid;

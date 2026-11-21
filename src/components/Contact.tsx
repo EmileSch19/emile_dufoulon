@@ -72,7 +72,7 @@ export default function Contact() {
               />
             </div>
             <button type="submit" className={`btn btn-primary ${styles.submit}`}>
-              {sent ? 'Message envoyé ✓' : 'Envoyer ↗'}
+              {sent ? 'Messagerie ouverte ✓' : 'Envoyer ↗'}
             </button>
           </form>
 

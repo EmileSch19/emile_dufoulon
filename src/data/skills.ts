@@ -4,17 +4,17 @@ export const skillCategories: SkillCategory[] = [
   {
     label: 'Frontend',
     color: '#1D9E75',
-    skills: ['React / Next.js', 'JavaScript ES6+', 'HTML5 / CSS3', 'Responsive Design', 'Mobile-first', 'Lighthouse > 90'],
+    skills: ['React / Next.js', 'TypeScript', 'JavaScript ES6+', 'HTML5 / CSS3', 'Tailwind CSS', 'Responsive / Mobile-first'],
   },
   {
     label: 'Backend',
     color: '#6B8CFF',
-    skills: ['Node.js', 'Python', 'Django', 'REST API', 'MongoDB', 'SQLite'],
+    skills: ['Node.js / Express', 'Python / Django', 'REST API', 'PostgreSQL', 'MySQL', 'MongoDB / SQLite'],
   },
   {
     label: 'Outils',
     color: '#FF9500',
-    skills: ['Git / GitHub', 'Vite', 'React Router', 'CI/CD Vercel', 'GitHub Pages', 'Tests multi-navigateurs'],
+    skills: ['Git / GitHub', 'Docker', 'Vite', 'React Router', 'Vercel / Netlify', 'Agile / Scrum'],
   },
 ]
 

@@ -41,7 +41,7 @@ function ProjectCard({ project }: { project: Project }) {
   )
 }
 
-const FILTERS = ['Tous', 'React', 'JavaScript', 'Python', 'HTML/CSS']
+const FILTERS = ['Tous', 'React', 'TypeScript', 'JavaScript', 'Python', 'HTML/CSS']
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('Tous')
@@ -51,10 +51,11 @@ export default function Projects() {
       ? projects
       : projects.filter((p) => {
           if (activeFilter === 'HTML/CSS') return p.tags.some((t) => t === 'HTML' || t === 'CSS')
+          if (activeFilter === 'React') return p.tags.some((t) => t === 'React' || t === 'Next.js')
           return p.tags.some((t) => t.includes(activeFilter))
         })
 
-  const featured = filtered.find((p) => p.featured)
+  const featured = filtered.filter((p) => p.featured)
   const rest = filtered.filter((p) => !p.featured)
 
   return (
@@ -69,6 +70,7 @@ export default function Projects() {
               <button
                 key={f}
                 className={`${styles.filter} ${activeFilter === f ? styles.filterActive : ''}`}
+                aria-pressed={activeFilter === f}
                 onClick={() => setActiveFilter(f)}
               >
                 {f}
@@ -78,9 +80,11 @@ export default function Projects() {
         </div>
 
         <div className={styles.grid}>
-          {featured && (
+          {featured.length > 0 && (
             <div className={styles.featured}>
-              <ProjectCard project={featured} />
+              {featured.map((p) => (
+                <ProjectCard key={p.name} project={p} />
+              ))}
             </div>
           )}
           <div className={styles.rest}>

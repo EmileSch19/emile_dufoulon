@@ -84,9 +84,9 @@
   height: 10px;
   border-radius: 50%;
 }
-.red    { background: #FF5F56; }
-.yellow { background: #FFBD2E; }
-.green  { background: #27C93F; }
+.dotRed    { background: #FF5F56; }
+.dotYellow { background: #FFBD2E; }
+.dotGreen  { background: #27C93F; }
 
 .terminalTitle {
   font-family: var(--font-mono);
@@ -103,7 +103,7 @@
   min-height: 240px;
 }
 
-.terminalLine { display: block; }
+.terminalLine { display: block; white-space: pre-wrap; }
 
 /* color helpers used dynamically */
 .green  { color: var(--green); }

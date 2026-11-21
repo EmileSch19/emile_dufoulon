@@ -38,7 +38,7 @@ export default function Hero() {
           </h1>
 
           <p className={`${styles.desc} fade-in fade-in-delay-2`}>
-            Bachelor Chef de Projets Digitaux option Développement Web à l'Eemi Lyon.
+            Bachelor Chef de Projets Digitaux option Développement Web à l'EEMI Lyon.
             Je crée des interfaces rapides, accessibles et bien architecturées.
           </p>
 
@@ -61,9 +61,9 @@ export default function Hero() {
         {/* Right — Terminal */}
         <div className={`${styles.terminal} fade-in fade-in-delay-2`}>
           <div className={styles.terminalBar}>
-            <span className={`${styles.dot} ${styles.red}`} />
-            <span className={`${styles.dot} ${styles.yellow}`} />
-            <span className={`${styles.dot} ${styles.green}`} />
+            <span className={`${styles.dot} ${styles.dotRed}`} />
+            <span className={`${styles.dot} ${styles.dotYellow}`} />
+            <span className={`${styles.dot} ${styles.dotGreen}`} />
             <span className={styles.terminalTitle}>profile.json</span>
           </div>
           <div className={styles.terminalBody}>

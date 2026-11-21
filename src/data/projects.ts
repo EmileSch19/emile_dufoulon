@@ -5,7 +5,7 @@ export const projects: Project[] = [
     name: 'Movizz',
     description:
       "Application web de découverte de films, avec recherche en temps réel via l'API OMDB, pages de détail dynamiques et gestion des favoris.",
-    tags: ['Next.js', 'TypeScipt', 'CSS', 'Netlify'],
+    tags: ['Next.js', 'TypeScript', 'CSS', 'Netlify'],
     repo: 'https://github.com/EmileSch19/Movizz.git',
     live: 'https://2movizz.netlify.app/',
     featured: true,
@@ -23,10 +23,10 @@ export const projects: Project[] = [
   {
     name: 'Portfolio',
     description:
-      'Portfolio personnel — composants React réutilisables, déploiement CI/CD Vercel, mobile-first, Lighthouse > 90.',
-    tags: ['React', 'CSS', 'Vercel', 'CI/CD'],
-    repo: 'https://github.com/EmileSch19/portfolio-emile.git',
-    live: 'https://portfolio-emile-nine.vercel.app/',
+      'Portfolio personnel — application React/TypeScript one-page, composants réutilisables, CSS Modules, responsive.',
+    tags: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'Netlify'],
+    repo: 'https://github.com/EmileSch19/emile_dufoulon',
+    live: 'https://emile-dufoulon.netlify.app/',
   },
   {
     name: 'FinTracker',
@@ -38,8 +38,8 @@ export const projects: Project[] = [
   },
   {
     name: 'Bedrine Game',
-    description: 'Projet de stage — application interactive développée en React.',
-    tags: ['React', 'JavaScript'],
+    description: 'Projet de stage — application interactive développée en Next.js.',
+    tags: ['Next.js', 'TypeScript'],
     repo: 'https://github.com/EmileSch19/MonStage.git',
     live: 'https://mon-stage.vercel.app/',
   },
