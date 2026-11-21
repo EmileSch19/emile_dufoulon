@@ -158,9 +158,10 @@ export const projects: Project[] = [
       'Modèle de données avec l’ORM Django, base PostgreSQL (Neon) en production',
       'Accès réservé aux utilisateurs connectés, compte démo sans mot de passe',
       'Formulaires validés (e-mail, salaire positif) avec messages d’erreur',
+      'Recherche et chiffres clés (effectif, masse salariale, salaire moyen), mode clair/sombre',
       'Réglages sensibles par variables d’environnement, tests automatisés',
     ],
-    stack: ['Python', 'Django', 'PostgreSQL', 'Neon', 'DaisyUI', 'Vercel'],
+    stack: ['Python', 'Django', 'PostgreSQL', 'Neon', 'CSS', 'Vercel'],
     image: '/projects/gestion-employes.webp',
     links: {
       live: 'https://gestion-employes.vercel.app/',
