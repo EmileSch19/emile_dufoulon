@@ -8,21 +8,31 @@
 .catCard {
   padding: 0;
   overflow: hidden;
+  border-top: 3px solid var(--cat-color);
 }
 
 .catCard:hover { transform: translateY(-4px); }
 
 .catHeader {
-  padding: 10px 20px;
-  border-radius: 7px 7px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px 4px;
 }
 
 .catLabel {
   font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  color: rgba(0,0,0,0.7);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cat-color);
   letter-spacing: 0.1em;
+}
+
+.catCount {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
 }
 
 .skillList {

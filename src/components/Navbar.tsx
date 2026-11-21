@@ -11,6 +11,23 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [active, setActive] = useState('')
+
+  useEffect(() => {
+    const sections = links
+      .map((l) => document.querySelector<HTMLElement>(l.href))
+      .filter((s): s is HTMLElement => s !== null)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(`#${e.target.id}`)
+        })
+      },
+      { rootMargin: '-45% 0px -50% 0px' },
+    )
+    sections.forEach((s) => observer.observe(s))
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -29,7 +46,12 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className={styles.nav}>
           {links.map((l) => (
-            <a key={l.href} href={l.href} className={styles.navLink}>
+            <a
+              key={l.href}
+              href={l.href}
+              className={`${styles.navLink} ${active === l.href ? styles.navLinkActive : ''}`}
+              aria-current={active === l.href ? 'true' : undefined}
+            >
               {l.label}
             </a>
           ))}
@@ -47,7 +69,9 @@ export default function Navbar() {
         <button
           className={styles.burger}
           onClick={() => setMenuOpen((v) => !v)}
-          aria-label="Menu"
+          aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           <span className={menuOpen ? styles.open : ''} />
           <span className={menuOpen ? styles.open : ''} />
@@ -57,7 +81,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className={styles.mobileMenu}>
+        <div id="mobile-menu" className={styles.mobileMenu}>
           {links.map((l) => (
             <a
               key={l.href}

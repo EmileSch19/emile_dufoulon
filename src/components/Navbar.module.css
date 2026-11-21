@@ -66,6 +66,8 @@
 }
 
 .navLink:hover { color: var(--text); }
+.navLinkActive { color: var(--text); }
+.navLinkActive::after { width: 100%; }
 .navLink:hover::after { width: 100%; }
 
 .cvBtn {
@@ -123,3 +125,8 @@
   .nav { display: none; }
   .burger { display: flex; }
 }
+
+/* Burger → croix */
+.burger span.open:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger span.open:nth-child(2) { opacity: 0; }
+.burger span.open:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

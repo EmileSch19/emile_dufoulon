@@ -1,3 +1,4 @@
+import type React from 'react'
 import { skillCategories, softSkills } from '../data/skills'
 import styles from './Skills.module.css'
 
@@ -10,12 +11,14 @@ export default function Skills() {
 
         <div className={styles.grid}>
           {skillCategories.map((cat) => (
-            <div key={cat.label} className={`card ${styles.catCard}`}>
-              <div
-                className={styles.catHeader}
-                style={{ background: cat.color }}
-              >
+            <div
+              key={cat.label}
+              className={`card ${styles.catCard}`}
+              style={{ '--cat-color': cat.color } as React.CSSProperties}
+            >
+              <div className={styles.catHeader}>
                 <span className={styles.catLabel}>{cat.label.toUpperCase()}</span>
+                <span className={styles.catCount}>{String(cat.skills.length).padStart(2, '0')}</span>
               </div>
               <ul className={styles.skillList}>
                 {cat.skills.map((sk) => (

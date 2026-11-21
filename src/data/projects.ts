@@ -13,6 +13,7 @@ export const projects: Project[] = [
   
   {
     name: 'Mercurial Shop',
+    image: '/projects/mercurial.webp',
     description:
       "Site e-commerce avec navigation dynamique via React Router, architecture de composants réutilisables et attention particulière portée à l'UX et au design.",
     tags: ['React', 'Vite', 'CSS', 'React Router'],
@@ -22,6 +23,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Portfolio',
+    image: '/projects/portfolio.webp',
     description:
       'Portfolio personnel — application React/TypeScript one-page, composants réutilisables, CSS Modules, responsive.',
     tags: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'Netlify'],
@@ -38,6 +40,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Bedrine Game',
+    image: '/projects/bedrine.webp',
     description: 'Projet de stage — application interactive développée en Next.js.',
     tags: ['Next.js', 'TypeScript'],
     repo: 'https://github.com/EmileSch19/MonStage.git',
@@ -61,6 +64,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Discover',
+    image: '/projects/discover.webp',
     description:
       'Interface de destination pour les vacances — design responsive mobile-first.',
     tags: ['HTML', 'CSS'],
@@ -69,6 +73,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Todo App',
+    image: '/projects/todo.webp',
     description:
       'CRUD complet en JS vanilla pur avec persistance via LocalStorage — aucune dépendance externe.',
     tags: ['JavaScript', 'LocalStorage'],

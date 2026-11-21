@@ -6,6 +6,24 @@ import styles from './Projects.module.css'
 function ProjectCard({ project }: { project: Project }) {
   return (
     <article className={`card ${project.featured ? 'featured' : ''} ${styles.card}`}>
+      {project.image ? (
+        <a
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.thumb}
+          tabIndex={-1}
+          aria-hidden="true"
+        >
+          <img src={project.image} alt="" loading="lazy" width={960} height={480} />
+        </a>
+      ) : (
+        <div className={`${styles.thumb} ${styles.thumbPlaceholder}`} aria-hidden="true">
+          <span className={styles.thumbPrompt}>~/projets $</span>
+          <span className={styles.thumbName}>{project.name.toLowerCase().replace(/\s+/g, '-')}</span>
+          <span className={styles.thumbStack}>{project.tags.slice(0, 3).join(' · ')}</span>
+        </div>
+      )}
       {project.featured && (
         <p className={styles.featuredBadge}>// FEATURED</p>
       )}

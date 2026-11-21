@@ -5,6 +5,7 @@ export interface Project {
   repo: string
   live: string
   featured?: boolean
+  image?: string
 }
 
 export interface SkillCategory {
