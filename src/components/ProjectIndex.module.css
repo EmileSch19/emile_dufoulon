@@ -1,0 +1,41 @@
+.table ul { list-style: none; }
+
+.head {
+  padding: 12px 0;
+  border-top: 2px solid var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.row {
+  align-items: baseline;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+  transition: background-color 0.2s, padding 0.2s;
+}
+
+.head > span { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; }
+
+.table li:last-child .row { border-bottom: 2px solid var(--ink); }
+
+.row:hover { background: var(--surface); padding-left: 12px; }
+.row:hover .cTitle { color: var(--red); }
+
+.cNum { grid-column: span 1; font-weight: 600; }
+.cTitle { grid-column: span 4; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; transition: color 0.2s; }
+.cKind { grid-column: span 3; }
+.cStack { grid-column: span 3; }
+.cYear { grid-column: span 1; text-align: right; }
+
+@media (max-width: 900px) {
+  .head { display: none; }
+  .cNum { grid-column: span 2; }
+  .cTitle { grid-column: span 10; font-size: 24px; }
+  .cKind { grid-column: 3 / span 7; color: var(--muted); font-size: 14px; }
+  .cYear { grid-column: span 3; font-size: 14px; }
+  .cStack { display: none; }
+}
