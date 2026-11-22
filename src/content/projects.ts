@@ -195,11 +195,18 @@ export const projects: Project[] = [
   {
     slug: 'travel-ventures',
     title: 'Travel Ventures',
+    year: '2025',
     kind: 'Front-end',
-    summary: "Site React de paysages du monde, avec routing et lazy loading d'images.",
-    stack: ['React', 'CSS', 'Hooks'],
+    summary: 'Site vitrine React de paysages du monde, optimisé : 0,6 Mo d’images au lieu de 100 Mo.',
+    highlights: [
+      'React 19 + Vite, composants fonctionnels et formulaire contrôlé (useState)',
+      'Images WebP redimensionnées, chargement différé et fond allégé sur mobile',
+      'Déploiement automatique sur GitHub Pages via GitHub Actions',
+    ],
+    stack: ['React', 'Vite', 'CSS', 'GitHub Actions', 'GitHub Pages'],
+    image: '/projects/travel-ventures.webp',
     links: {
-      live: 'https://portfolio-emile-crz7.vercel.app/',
+      live: 'https://emilesch19.github.io/Travel_Ventures/',
       repo: 'https://github.com/EmileSch19/Travel_Ventures',
     },
   },
