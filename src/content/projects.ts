@@ -199,7 +199,7 @@ export const projects: Project[] = [
     kind: 'Front-end',
     summary: 'Site vitrine React de paysages du monde, optimisé : 0,6 Mo d’images au lieu de 100 Mo.',
     highlights: [
-      'React 19 + Vite, composants fonctionnels et formulaire contrôlé (useState)',
+      'React 19 + Vite, composants fonctionnels ; formulaire contrôlé avec destination pré-remplie (état partagé entre composants)',
       'Images WebP redimensionnées, chargement différé et fond allégé sur mobile',
       'Déploiement automatique sur GitHub Pages via GitHub Actions',
     ],
