@@ -102,7 +102,7 @@ export const projects: Project[] = [
       repo: 'https://github.com/EmileSch19/Movizz',
     },
     image: '/projects/movizz.webp',
-    bento: 'wide',
+    bento: 'small',
   },
   {
     slug: 'bedrinegame',
@@ -167,12 +167,13 @@ export const projects: Project[] = [
       live: 'https://gestion-employes.vercel.app/',
       repo: 'https://github.com/EmileSch19/django-gestion-employes',
     },
+    bento: 'small',
   },
   {
     slug: 'portfolio',
     title: 'Portfolio',
     year: '2026',
-    kind: 'Next.js',
+    kind: 'Front-end — site statique',
     summary: 'Ce site : Next.js, TypeScript, export statique, mode clair et sombre.',
     stack: ['Next.js', 'React', 'TypeScript', 'CSS Modules', 'Netlify'],
     links: {

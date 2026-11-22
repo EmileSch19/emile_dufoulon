@@ -5,6 +5,7 @@ import { projects } from '@/content/projects'
 
 export const metadata: Metadata = {
   title: 'Projets',
+  alternates: { canonical: '/projets/' },
   description: 'Tous les projets web et mobiles réalisés par Emile Dufoulon, développeur full stack.',
 }
 

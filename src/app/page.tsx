@@ -78,7 +78,7 @@ export default function Home() {
           ))}
 
           <div className={`${styles.tile} ${styles.portrait}`}>
-            <img src="/emile.jpg" alt="Portrait d’Emile Dufoulon" className={styles.portraitImg} />
+            <img src="/emile.jpg" alt="Portrait d’Emile Dufoulon" className={styles.portraitImg} width={320} height={320} />
             <div className={styles.portraitBody}>
               <strong>{profile.school}</strong>
               <span className="muted">{profile.languages}</span>
